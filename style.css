@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mt{
+    margin: 10px 0;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+.field{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 500px;
+    width: 500px;
+}
+.quadrato{
+    border: 2px solid black;
+}
+.quadrato_onclick{
+    background-color: seagreen;
+}
+.quadrato_easy{
+    width: calc(100%/10);
+}
+.quadrato_peasy{
+    width: calc(100%/9);
+}
+.quadrato_lemon_squeeze{
+    width: calc(100%/7);
+}
