@@ -6,16 +6,26 @@ btn.addEventListener('click', function(){ //aggiungo un ascoltatore di eventi ch
     field.innerHTML = '';
     
     if(selected==1){
-        for (let index = 0; index < 100; index++) {
-            field.innerHTML += ` <div class="quadrato quadrato_easy"></div>`
+        for (let index = 1; index <= 100; index++) {
+            field.innerHTML += ` <div class="square square_easy">${index}</div>`
         }
     }else if(selected==2){
-        for (let index = 0; index < 81; index++) {
-            field.innerHTML += ` <div class="quadrato quadrato_peasy"></div>`
+        for (let index = 1; index <= 81; index++) {
+            field.innerHTML += ` <div class="square square_peasy">${index}</div>`
         }
     }else if(selected==3){
-        for (let index = 0; index < 49; index++) {
-            field.innerHTML += ` <div class="quadrato quadrato_lemon_squeeze"></div>`
+        for (let index = 1; index <= 49; index++) {
+            field.innerHTML += ` <div class="square square_lemon_squeeze">${index}</div>`
         }
     }
+    let changeColor = document.getElementsByClassName('square');
+    for (let index = 0; index < changeColor.length -1; index++) {
+        changeColor[index].addEventListener('click', function(){
+            changeColor[index].classList.add('square_onclick')
+        })
+        
+    }
 })
+
+
+
